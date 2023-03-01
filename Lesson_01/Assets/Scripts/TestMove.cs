@@ -7,31 +7,34 @@ public class TestMove : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
-    [SerializeField] private Rigidbody rb;
+    [SerializeField] private Rigidbody _rb;
+    public Vector3 Move;
+    public float Horizontal ;
+    public float Vertical ;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        _rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
+    private void Update()
+    {
+        Horizontal = Input.GetAxis("Horizontal");
+        Vertical = Input.GetAxis("Vertical");
+
+    }
+
     void FixedUpdate()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-        Vector3 move = new Vector3(horizontal, 0, vertical);
-
-        rb.MovePosition(transform.position + move * _speed * Time.deltaTime);
         
+        Move = new Vector3(Horizontal, 0, Vertical);
+
+        _rb.MovePosition(transform.position + Move * _speed * Time.deltaTime);
        
-
-
-        
-
     }
 
 
