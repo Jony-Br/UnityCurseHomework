@@ -14,3 +14,10 @@ https://store.steampowered.com/app/310790/Geometry_Wars_3_Dimensions_Evolved/
 	4. Есть возможность поменять спрайт героя
 	5. Набор очков
 	6. Интересная стилизация карт 
+
+
+
+
+Идеи 
+Черная дыра использовать MagnatEffector 
+Работа с пулями через OnCollisionEnter
