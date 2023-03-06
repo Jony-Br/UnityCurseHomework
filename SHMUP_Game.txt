@@ -1,0 +1,23 @@
+Аналоги(Референсы)
+
+httpsstore.steampowered.comapp1489300Operation_STEEL
+
+https://hitp-studio.itch.io/schildmaid-mx
+
+// Классная стилизация уровней на процедурном уровне с интересными идеями 
+https://store.steampowered.com/app/310790/Geometry_Wars_3_Dimensions_Evolved/
+
+Основные фичи:
+	1. Различное оружия 
+	2. Есть различные способности(активки, пасивки) 
+	3. Множество паттернов у мобов
+	4. Есть возможность поменять спрайт героя
+	5. Набор очков
+	6. Интересная стилизация карт 
+
+
+
+
+Идеи 
+Черная дыра использовать MagnatEffector 
+Работа с пулями через OnCollisionEnter
