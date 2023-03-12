@@ -5,12 +5,31 @@ using UnityEngine;
 using UnityEngine.UI;
 public class InputFieldS : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public InputField input;
-    public Text output;
+    [SerializeField] private InputField _input;
+    [SerializeField] private Button _button;
+    [SerializeField] private Text _textChange;
 
-    public void OnClick()
+   
+
+
+    private void Start()
     {
-        output.text = input.text;
+        _input.GetComponent<InputField>();
+        _textChange.GetComponent<Text>();
+    }
+
+    private void Update()
+    {
+        
+        OnClick();
+
+    }
+
+    private void OnClick()
+    {
+        if (_button == true)
+        {
+            _input.text = _textChange.text;
+        }
     }
 }
