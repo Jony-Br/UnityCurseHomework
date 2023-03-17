@@ -7,7 +7,8 @@ public enum DetectCollisionType
 {
     Bullet,
     Enemy,
-    Wall
+    Wall,
+    Player
 }
 
 
