@@ -24,7 +24,14 @@ public class DamageDetection : MonoBehaviour
                 Destroy(_bulletPrefab.gameObject);
                 
             }
-          
+            if (objects.Type == DetectCollisionType.Player)
+            {
+                //Destroy(collision.gameObject);
+                Destroy(_bulletPrefab.gameObject);
+
+            }
+
+
         }
 
 

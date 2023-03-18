@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4881493916765092927}
   - component: {fileID: 4881493916765092926}
   - component: {fileID: 5242543594707926768}
-  - component: {fileID: 1413515793319049439}
   - component: {fileID: 1083018194826230982}
+  - component: {fileID: 4427763198241327552}
   - component: {fileID: 6101355271403455999}
   - component: {fileID: 8947471558400098333}
   m_Layer: 0
@@ -103,19 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 10
   _timeToDestoy: 2
---- !u!114 &1413515793319049439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4881493916765092921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d458f54e63d40e4088e43441a0b8bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bulletPrefab: {fileID: 5242543594707926768}
+  _velocity: {x: 1, y: 0, z: 0}
 --- !u!114 &1083018194826230982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +117,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _detectCollisionType: 0
+--- !u!114 &4427763198241327552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4881493916765092921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d458f54e63d40e4088e43441a0b8bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 5242543594707926768}
 --- !u!61 &6101355271403455999
 BoxCollider2D:
   m_ObjectHideFlags: 0

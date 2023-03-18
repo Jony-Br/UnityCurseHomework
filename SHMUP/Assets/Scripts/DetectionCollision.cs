@@ -6,8 +6,9 @@ using UnityEngine;
 public enum DetectCollisionType
 {
     Bullet,
-    Enemy,
+    EnemyBullet,
     Wall,
+    Enemy,
     Player
 }
 
