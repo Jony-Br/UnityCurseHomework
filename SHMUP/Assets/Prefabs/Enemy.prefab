@@ -11,11 +11,8 @@ GameObject:
   - component: {fileID: 2778528037823134072}
   - component: {fileID: 2778528037823134074}
   - component: {fileID: 5015504244326872655}
-  - component: {fileID: 1411536124791503666}
-  - component: {fileID: 4452847806210615066}
-  - component: {fileID: 5735346821493718279}
+  - component: {fileID: 8870133130442619796}
   - component: {fileID: 2778528037823134068}
-  - component: {fileID: 7846565774582061735}
   - component: {fileID: 2778528037823134075}
   m_Layer: 7
   m_Name: Enemy
@@ -31,15 +28,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2778528037823134073}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7065279, w: 0.70768523}
-  m_LocalPosition: {x: 13.625862, y: 4.951821, z: -0.47245094}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2626672654786605084}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.906}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &2778528037823134074
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -104,54 +101,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d162fb189be7440bfbf85f38b8ff95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
-  _canShoot: 0
+  _speed: 5
+  _canShoot: 1
   _timeToDestoy: 10
-  _bulletEnemyPrefab: {fileID: 5242543594707926768, guid: b75f22315f216574393e2635e18d304d, type: 3}
-  _bulletEnemyStartPoint: {fileID: 2626672654786605084}
---- !u!114 &1411536124791503666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2778528037823134073}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9827ab184646c9408f26a835dad0954, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 5015504244326872655}
-  _position: {fileID: 0}
-  _isMoving: 0
---- !u!114 &4452847806210615066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2778528037823134073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d458f54e63d40e4088e43441a0b8bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bulletPrefab: {fileID: 5242543594707926768, guid: b75f22315f216574393e2635e18d304d, type: 3}
---- !u!114 &5735346821493718279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2778528037823134073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26ba8cc326bccc842a646cc65c03bcb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _health: 5
+  _bulletEnemyPrefab: {fileID: 7274806458820409931, guid: f3dbe12b9b6f3c249a7469b609489035, type: 3}
+  _bulletEnemyStartPoint1: {fileID: 2626672654786605084}
+  _bulletEnemyStartPoint2: {fileID: 0}
   _ship: {fileID: 2778528037823134073}
-  _bulletPrefab: {fileID: 5242543594707926768, guid: b75f22315f216574393e2635e18d304d, type: 3}
+  _typeShip: {fileID: 8870133130442619796}
+  _health: 3
+  delay: 0
+--- !u!114 &8870133130442619796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2778528037823134073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b589ec834d0fbe4aa0754040835f200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyShipTypes: 2
 --- !u!114 &2778528037823134068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,26 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afceb019bccc37f46ae98d692fbe4fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _detectCollisionType: 1
---- !u!114 &7846565774582061735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2778528037823134073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54582a033524de04e8912f7f4e2d0dc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _shipDatas:
-  - _type: 2
-    _movementSpeed: 3
-    _healthPoint: 5
-    _scorePoint: 10
-    _damage: 0
-    _price: 0
+  _detectCollisionType: 3
 --- !u!68 &2778528037823134075
 EdgeCollider2D:
   m_ObjectHideFlags: 0

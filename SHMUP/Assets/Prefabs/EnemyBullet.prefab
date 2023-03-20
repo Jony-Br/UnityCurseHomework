@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1083018194826230982, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: _detectCollisionType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427763198241327552, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: _enemyType
+      value: 
+      objectReference: {fileID: 7274806458820409931}
     - target: {fileID: 4881493916765092921, guid: b75f22315f216574393e2635e18d304d, type: 3}
       propertyPath: m_Name
       value: EnemyBullet Variant
@@ -18,6 +26,18 @@ PrefabInstance:
     - target: {fileID: 4881493916765092927, guid: b75f22315f216574393e2635e18d304d, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4881493916765092927, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4881493916765092927, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4881493916765092927, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4881493916765092927, guid: b75f22315f216574393e2635e18d304d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60,11 +80,43 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 5242543594707926768, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: _speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242543594707926768, guid: b75f22315f216574393e2635e18d304d, type: 3}
       propertyPath: _velocity.x
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5242543594707926768, guid: b75f22315f216574393e2635e18d304d, type: 3}
       propertyPath: _velocity.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242543594707926768, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: _timeToDestoy
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6101355271403455999, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.26393506
+      objectReference: {fileID: 0}
+    - target: {fileID: 6101355271403455999, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.26798862
+      objectReference: {fileID: 0}
+    - target: {fileID: 6101355271403455999, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00000014901161
+      objectReference: {fileID: 0}
+    - target: {fileID: 6101355271403455999, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0021134391
+      objectReference: {fileID: 0}
+    - target: {fileID: 6101355271403455999, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6101355271403455999, guid: b75f22315f216574393e2635e18d304d, type: 3}
+      propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6101355271403455999, guid: b75f22315f216574393e2635e18d304d, type: 3}
@@ -77,3 +129,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b75f22315f216574393e2635e18d304d, type: 3}
+--- !u!114 &7274806458820409931 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5242543594707926768, guid: b75f22315f216574393e2635e18d304d, type: 3}
+  m_PrefabInstance: {fileID: 3185184519311688891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3214e5131248ec94a9803504151f2906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

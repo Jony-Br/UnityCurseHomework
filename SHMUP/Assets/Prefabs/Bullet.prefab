@@ -130,6 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 5242543594707926768}
+  _health: 0
+  _ship: {fileID: 0}
 --- !u!61 &6101355271403455999
 BoxCollider2D:
   m_ObjectHideFlags: 0

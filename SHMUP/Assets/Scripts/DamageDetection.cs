@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageDetection : MonoBehaviour
 {
     [SerializeField] private BulletBehaviour _bulletPrefab;
+    [SerializeField] private BulletBehaviour _enemyType;
     //public HealthPoint _healthPoint;
     //[SerializeField] private GameObject _target;
     //[SerializeField] private int _health;
@@ -14,28 +15,24 @@ public class DamageDetection : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log($"[{GetType().Name}][onColisionEnter2D] : {collision.gameObject.name}");
+        //Debug.Log($"[{GetType().Name}][onColisionEnter2D] : {collision.gameObject.name}");
 
         if (collision.gameObject.TryGetComponent<DetectionCollision>(out var objects))
         {
-            if (objects.Type == DetectCollisionType.Enemy)
-            {
-                //Destroy(collision.gameObject);
-                Destroy(_bulletPrefab.gameObject);
-                
-            }
-            if (objects.Type == DetectCollisionType.Player)
-            {
-                //Destroy(collision.gameObject);
-                Destroy(_bulletPrefab.gameObject);
 
+            if (objects.Type == DetectCollisionType.Wall)
+            {
+                // Debug.Log($"[onTriggerEnter2D] : Wall : {objects.name}");
+                //Destroy(collision.gameObject);
+                Destroy(_bulletPrefab.gameObject);
             }
+
 
 
         }
 
-
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -46,10 +43,16 @@ public class DamageDetection : MonoBehaviour
             if (objects.Type == DetectCollisionType.Wall)
             {
                 // Debug.Log($"[onTriggerEnter2D] : Wall : {objects.name}");
+                //Destroy(collision.gameObject);
                 Destroy(_bulletPrefab.gameObject);
             }
+
+
+
         }
+
+
     }
 
-  
+
 }
