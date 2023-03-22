@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2778528037823134072}
   - component: {fileID: 2778528037823134074}
   - component: {fileID: 5015504244326872655}
+  - component: {fileID: -5162330705063463878}
   - component: {fileID: 8870133130442619796}
   - component: {fileID: 2778528037823134068}
   - component: {fileID: 2778528037823134075}
@@ -101,16 +102,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d162fb189be7440bfbf85f38b8ff95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _health: 3
+  _speed: 4
+  _timeToDestoy: 0
+  _lifeTime: 80
   _canShoot: 1
-  _timeToDestoy: 10
   _bulletEnemyPrefab: {fileID: 7274806458820409931, guid: f3dbe12b9b6f3c249a7469b609489035, type: 3}
-  _bulletEnemyStartPoint1: {fileID: 2626672654786605084}
-  _bulletEnemyStartPoint2: {fileID: 0}
+  _bulletEnemyPrefabSmoler: {fileID: 0}
+  _bulletEnemyStartPoint: {fileID: 2626672654786605084}
   _ship: {fileID: 2778528037823134073}
   _typeShip: {fileID: 8870133130442619796}
-  _health: 3
-  delay: 0
+  scorePoint: 150
+  _buster: {fileID: 652418227314187651, guid: eca52c21dff29bb40bf0361e1bad5a39, type: 3}
+  _hasBonus: 0
+--- !u!114 &-5162330705063463878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2778528037823134073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d458f54e63d40e4088e43441a0b8bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bulletPrefab: {fileID: 0}
 --- !u!114 &8870133130442619796
 MonoBehaviour:
   m_ObjectHideFlags: 0

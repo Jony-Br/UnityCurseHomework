@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Menu.unity
+    guid: e4ee3e9962cf3a14fb2dfbe58beb1f1c
+  - enabled: 1
+    path: Assets/Scenes/Option.unity
+    guid: bfe70089bf9910e42b53d51b1aec9bfd
+  - enabled: 1
+    path: Assets/Scenes/Weve1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Weve2.unity
+    guid: 63929ed88dffc1845b7d2196c206162f
+  - enabled: 1
+    path: Assets/Scenes/Weve3.unity
+    guid: 1eefc4f268e96394bbcb8bd62486d076
+  - enabled: 1
+    path: Assets/Scenes/Weve4.unity
+    guid: 4cf99154bc78d44409899831e75cb315
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 2eda13841cdaa9c40b62182bfde5c072
   m_configObjects: {}

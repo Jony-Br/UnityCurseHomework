@@ -9,7 +9,9 @@ public enum DetectCollisionType
     EnemyBullet,
     Wall,
     Enemy,
-    Player
+    Player,
+    Shield,
+    Buster
 }
 
 

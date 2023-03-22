@@ -152,9 +152,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5015504244326872655, guid: 528777d9c036da44590c4a399c3c4484, type: 3}
+      propertyPath: _lifeTime
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015504244326872655, guid: 528777d9c036da44590c4a399c3c4484, type: 3}
       propertyPath: _typeShip
       value: 
       objectReference: {fileID: 493966921219126164}
+    - target: {fileID: 5015504244326872655, guid: 528777d9c036da44590c4a399c3c4484, type: 3}
+      propertyPath: scorePoint
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5015504244326872655, guid: 528777d9c036da44590c4a399c3c4484, type: 3}
+      propertyPath: _scorePoint
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5015504244326872655, guid: 528777d9c036da44590c4a399c3c4484, type: 3}
       propertyPath: _bulletEnemyPrefab
       value: 
@@ -166,7 +178,7 @@ PrefabInstance:
     - target: {fileID: 5015504244326872655, guid: 528777d9c036da44590c4a399c3c4484, type: 3}
       propertyPath: _bulletEnemyStartPoint1
       value: 
-      objectReference: {fileID: 6578835316781789560}
+      objectReference: {fileID: 0}
     - target: {fileID: 8870133130442619796, guid: 528777d9c036da44590c4a399c3c4484, type: 3}
       propertyPath: _enemyShipTypes
       value: 0
@@ -184,8 +196,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b589ec834d0fbe4aa0754040835f200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &6578835316781789560 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2778528037823134072, guid: 528777d9c036da44590c4a399c3c4484, type: 3}
-  m_PrefabInstance: {fileID: 9062341249880262656}
-  m_PrefabAsset: {fileID: 0}

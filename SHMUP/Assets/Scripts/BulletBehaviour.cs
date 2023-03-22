@@ -1,24 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEditor;
 using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour
 {
-    [SerializeField] private float _speed;
-    [SerializeField] private float _timeToDestoy;
-    public Vector3 _velocity ;
-   // [SerializeField] private float _damage = 5;
+    public float _speed;
+    public Vector3 direction;
 
-    // Start is called before the first frame update
+    public float timeToDestoy;
+    public float lifeTime;
+
+    public Vector3 bulletPosition;
+
     void Start()
     {
-        Destroy(gameObject, _timeToDestoy);    
+  
+
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        transform.position += _velocity * _speed * Time.deltaTime;
+
+    }
+
+    private void FixedUpdate()
+    {
+
+        bulletPosition = direction * _speed * Time.fixedDeltaTime;
+        transform.position += bulletPosition;
+
+        timeToDestoy += Time.fixedDeltaTime;
+        if(timeToDestoy > lifeTime) 
+        {
+
+            DeactivateGameObject();
+          
+        }
+
+    }
+
+    private void DeactivateGameObject()
+    {
+        //gameObject.SetActive(false);
+         Destroy(gameObject);
+         DontDestroyOnLoad(gameObject);
+       
+
     }
 }
